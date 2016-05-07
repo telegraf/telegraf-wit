@@ -1,13 +1,12 @@
 var Telegraf = require('telegraf')
-var TelegrafWit = require('../lib/wit')
+var TelegrafWit = require('../lib/telegraf-wit')
 var Promise = require('bluebird')
 
 // Related wit app: https://wit.ai/dotcypress/weather/stories
 var app = new Telegraf(process.env.BOT_TOKEN)
 var wit = new TelegrafWit(process.env.WIT_TOKEN)
 
-// For testing only. Session will be lost on app restart
-app.use(TelegrafWit.memorySession())
+app.use(Telegraf.memorySession())
 
 // Add wit middleware
 app.use(wit.middleware())

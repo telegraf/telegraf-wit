@@ -21,36 +21,34 @@ $ npm install telegraf-wit
 var Telegraf = require('telegraf')
 var TelegrafWit = require('telegraf-wit')
 
-var app = new Telegraf(process.env.BOT_TOKEN)
+var telegraf = new Telegraf(process.env.BOT_TOKEN)
 var wit = new TelegrafWit(process.env.WIT_TOKEN)
 
-app.on('text', function * () {
+telegraf.on('text', function * () {
   var result = yield wit.getMeaning(this.message.text)
   // reply to user with wit result
   this.reply(JSON.stringify(result, null, 2))
 })
 
-app.startPolling()
+telegraf.startPolling()
 
 ```
 
 ## Story processing example
-
-Story processing depends on relegraf session. For testing purposes you can use TelegrafWit.memorySession(). For production environment use any [`telegraf-session-*`](https://www.npmjs.com/search?q=telegraf-session) middleware.
 
   
 ```js
 var Telegraf = require('telegraf')
 var TelegrafWit = require('telegraf-wit')
 
-var app = new Telegraf(process.env.BOT_TOKEN)
+var telegraf = new Telegraf(process.env.BOT_TOKEN)
 var wit = new TelegrafWit(process.env.WIT_TOKEN)
 
-// For testing only. Session will be lost on app restart
-app.use(TelegrafWit.memorySession())
+// We need session for store story data
+telegraf.use(Telegraf.memorySession())
 
 // Add wit conversation middleware
-app.use(wit.middleware())
+telegraf.use(wit.middleware())
 
 // Merge handlers
 wit.onMerge(function * () {
@@ -74,7 +72,7 @@ wit.onAction('get-forecast', function * () {
   }
 })
 
-app.startPolling()
+telegraf.startPolling()
 
 ```
 
@@ -164,7 +162,7 @@ Adds action handlers to app
 
 ## User context
 
-Wit user context mapping:
+Telegraf user context props:
 
 ```js
 wit.onXXX(function * (){
