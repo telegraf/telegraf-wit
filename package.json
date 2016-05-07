@@ -1,0 +1,50 @@
+{
+  "name": "telegraf-wit",
+  "version": "0.0.0",
+  "description": "wit.ai middleware for Telegraf",
+  "main": "lib/wit.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/telegraf/telegraf-wit.git"
+  },
+  "keywords": [
+    "telegram",
+    "telegram bot",
+    "telegraf",
+    "bot",
+    "wit.ai",
+    "natural language",
+    "wit"
+  ],
+  "author": "Vitaly Domnikov <dotcypress@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/telegraf/telegraf-wit/issues"
+  },
+  "homepage": "https://github.com/telegraf/telegraf-wit#readme",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "files": [
+    "lib/wit.js",
+    "lib/memory-session.js"
+  ],
+  "scripts": {
+    "test": "mocha test --require should"
+  },
+  "dependencies": {
+    "debug": "^2.2.0",
+    "koa-compose": "^2.4.0",
+    "node-fetch": "^1.5.1",
+    "qs": "^6.1.0"
+  },
+  "peerDependencies": {
+    "telegraf": "^0.4.4"
+  },
+  "devDependencies": {
+    "bluebird": "^3.3.5",
+    "mocha": "^2.4.5",
+    "should": "^8.3.1",
+    "telegraf": "^0.4.4"
+  }
+}
