@@ -2,7 +2,7 @@
   "name": "telegraf-wit",
   "version": "0.2.0",
   "description": "wit.ai middleware for Telegraf",
-  "main": "lib/wit.js",
+  "main": "lib/telegraf-wit.js",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/telegraf/telegraf-wit.git"
