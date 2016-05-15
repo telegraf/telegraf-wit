@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/telegraf/telegraf-wit#readme",
   "engines": {
-    "node": ">=4.0.0"
+    "node": ">=4.4.4"
   },
   "files": [
     "lib/telegraf-wit.js"
@@ -40,7 +40,7 @@
     "qs": "^6.1.0"
   },
   "peerDependencies": {
-    "telegraf": "^0.5.0"
+    "telegraf": ">=0.7.0"
   },
   "devDependencies": {
     "bluebird": "^3.3.5",
