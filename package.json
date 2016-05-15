@@ -1,6 +1,6 @@
 {
   "name": "telegraf-wit",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "wit.ai middleware for Telegraf",
   "main": "lib/telegraf-wit.js",
   "repository": {
@@ -46,6 +46,6 @@
     "bluebird": "^3.3.5",
     "mocha": "^2.4.5",
     "should": "^8.3.1",
-    "telegraf": "^0.5.0"
+    "telegraf": ">=0.7.0"
   }
 }
