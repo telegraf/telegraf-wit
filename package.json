@@ -1,6 +1,6 @@
 {
   "name": "telegraf-wit",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "wit.ai middleware for Telegraf",
   "main": "lib/telegraf-wit.js",
   "repository": {
