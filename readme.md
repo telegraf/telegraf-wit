@@ -3,7 +3,7 @@
 [![Build Status](https://img.shields.io/travis/telegraf/telegraf-wit.svg?branch=master&style=flat-square)](https://travis-ci.org/telegraf/telegraf-wit)
 [![NPM Version](https://img.shields.io/npm/v/telegraf-wit.svg?style=flat-square)](https://www.npmjs.com/package/telegraf-wit)
 
-[wit.ai](https://wit.ai/) middleware for [Telegraf](https://github.com/telegraf/telegraf)(Telegram bot framework).
+[wit.ai](https://wit.ai/) middleware for [Telegraf (Telegram bot framework)](https://github.com/telegraf/telegraf)(Telegram bot framework).
 
 > Easily create text bots that humans can chat with on their preferred messaging platform.
 >
