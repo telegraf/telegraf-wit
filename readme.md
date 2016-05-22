@@ -35,7 +35,6 @@ telegraf.startPolling()
 ```
 
 ## Story processing example
-
   
 ```js
 var Telegraf = require('telegraf')
