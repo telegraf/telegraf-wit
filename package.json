@@ -41,7 +41,7 @@
     "qs": "^6.1.0"
   },
   "peerDependencies": {
-    "telegraf": "^2.5.2"
+    "telegraf": "^2.5.2 || ^3.0.0"
   },
   "devDependencies": {
     "eslint": "^3.1.1",
