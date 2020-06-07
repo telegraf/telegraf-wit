@@ -26,7 +26,7 @@ const telegraf = new Telegraf(process.env.BOT_TOKEN)
 const wit = new TelegrafWit(process.env.WIT_TOKEN)
 
 telegraf.on('text', (ctx) => {
-  return wit.getMeaning(ctx.message.text)
+  return wit.meaning(ctx.message.text)
     .then((result) => {
       // reply to user with wit result
       return ctx.reply(JSON.stringify(result, null, 2))
